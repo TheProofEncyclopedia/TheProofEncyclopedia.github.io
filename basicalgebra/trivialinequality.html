@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript"
+		  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+		</script>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<style type="text/css">
+			.bs-example{
+		    	margin: 20px;
+		    }
+		</style>
+		
+    
+	      <link rel="stylesheet" href="main.css">
+		<title>The Proof Encyclopedia</title>
+	</head>
+	<body>
+	<div class="bs-example">
+	    <ul class="nav nav-pills">
+	        <li class="active"><a href="http://theproofencyclopedia.github.io">Home</a></li>
+	        <li class="dropdown">
+	            <a href="#" data-toggle="dropdown" class="dropdown-toggle">Topics <b class="caret"></b></a>
+	            <ul class="dropdown-menu">
+	                <li><a href="http://theproofencyclopedia.github.io/basicalgebra">Basic Algebra</a></li>
+	                <li><a href="#">Number Theory</a></li>
+	            </ul>
+	        </li>
+	    </ul>
+	</div>
+	<div class>
+	
+	<div align="center"><h3>Theorem</h3></div>
+	<div align="center">For all real numbers \(x\), \(x^2\ge 0\), with equality if and only if \(x=0\).</div>
+	<div align="center"><h3>Proof</h3></div>
+	<div align="center"><p>We proceed by contradiction. Suppose there exists a real x such that \(x^2<0\). We can have either \(x=0\), \(x>0\), or \(x<0\). If \(x=0\), then there is a clear contradiction, as \(x^2 = 0^2 \not < 0\). If \(x>0\), then \(x^2 < 0\) gives \(x < \frac{0}{x} = 0\) upon division by \(x\) (which is positive), so this case also leads to a contradiction. Finally, if \(x<0\), then \(x^2 < 0\) gives \(x > \frac{0}{x} = 0\) upon division by \(x\) (which is negative), and yet again we have a contradiction.
+Therefore, \(x^2 \ge 0\) for all real \(x\), as claimed.</p></div>
+	    
+</html>
