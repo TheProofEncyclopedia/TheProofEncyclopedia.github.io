@@ -36,10 +36,11 @@
 	<div class>
 	
 	<div align="center"><h3>Theorem</h3></div>
-	<div align="center">For all real numbers \(x\), \(x^2\ge 0\), with equality if and only if \(x=0\).</div>
+	<div align="center">If \(a\) is an integer, \(p\) is a prime number, and \(a\) is not divisible by \(p\), then \(a^{p-1}\equiv 1 \pmod {p}\)</div>
 	<div align="center"><h3>Proof</h3></div>
-	<div align="center"><p>We proceed by contradiction. Suppose there exists a real x such that \(x^2<0\). We can have either \(x=0\), \(x>0\), or \(x<0\). If \(x=0\), then there is a clear contradiction, as \(x^2 = 0^2 \not < 0\). If \(x>0\), then \(x^2 < 0\) gives \(x < \frac{0}{x} = 0\) upon division by \(x\) (which is positive), so this case also leads to a contradiction. Finally, if \(x<0\), then \(x^2 < 0\) gives \(x > \frac{0}{x} = 0\) upon division by \(x\) (which is negative), and yet again we have a contradiction.
-Therefore, \(x^2 \ge 0\) for all real \(x\), as claimed.∎</p></div>
+	<div align="center"><p>The most straightforward way to prove this theorem is by by applying the induction principle. We fix \(p\) as a prime number. The base case, \(1^p \equiv 1 \pmod{p}\), is obviously true. Suppose the statement \(a^p \equiv a \pmod{p}\) is true. Then, by the binomial theorem, $$(a+1)^p = a^p + {p \choose 1} a^{p-1} + {p \choose 2} a^{p-2} + \cdots + {p \choose p-1} a + 1.$$</p></div>
+	<div align="center"><p>Note that \(p\) divides into any binomial coefficient of the form \({p \choose k}\) for \(1 \le k \le p-1\). This follows by the definition of the binomial coefficient as \({p \choose k} = \frac{p!}{k! (p-k)!}\); since \(p\) is prime, then \(p\) divides the numerator, but not the denominator.
+		<div align="center"><p>Taken \(\mod p\), all of the middle terms disappear, and we end up with \((a+1)^p \equiv a^p + 1 \pmod{p}\). Since we also know that \(a^p \equiv a\pmod{p}\), then \((a+1)^p \equiv a+1 \pmod{p}\), as desired.</p></div>
 
 <p>From AoPSWiki</p>
 </html>
