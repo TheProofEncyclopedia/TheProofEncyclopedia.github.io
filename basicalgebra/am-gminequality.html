@@ -36,9 +36,21 @@
 	<div class>
 	
 	<div align="center"><h3>Theorem</h3></div>
-	<div align="center">For all real numbers \(x\), \(x^2\ge 0\), with equality if and only if \(x=0\).</div>
+	<div align="center">AM-GM states that for any set of nonnegative real numbers, the arithmetic mean of the set is greater than or equal to the geometric mean of the set. Algebraically, this is expressed as follows.
+
+For a set of nonnegative real numbers \(a_1,a_2,\ldots,a_n\), the following always holds:
+$$\frac{a_1+a_2+\ldots+a_n}{n}\geq\sqrt[n]{a_1a_2\cdots a_n}$$
+Using the shorthand notation for summations and products:
+$$\sum_{i=1}^{n}\frac{a_i}{n} \geq \prod\limits_{i=1}^{n}a_i^{\frac{1}{n}}.$$
+For example, for the set \(\{9,12,54\}\), the arithmetic mean, \(25\), is greater than the geometric mean, \(18\); AM-GM guarantees this is always the case.</div>
+
+<div align="center">The equality condition of this inequality states that the arithmetic mean and geometric mean are equal if and only if all members of the set are equal.</div>
 	<div align="center"><h3>Proof</h3></div>
-	<div align="center"><p>We proceed by contradiction. Suppose there exists a real x such that \(x^2<0\). We can have either \(x=0\), \(x>0\), or \(x<0\). If \(x=0\), then there is a clear contradiction, as \(x^2 = 0^2 \not < 0\). If \(x>0\), then \(x^2 < 0\) gives \(x < \frac{0}{x} = 0\) upon division by \(x\) (which is positive), so this case also leads to a contradiction. Finally, if \(x<0\), then \(x^2 < 0\) gives \(x > \frac{0}{x} = 0\) upon division by \(x\) (which is negative), and yet again we have a contradiction.
-Therefore, \(x^2 \ge 0\) for all real \(x\), as claimed.∎</p></div>
+	<div align="center"><p>We note that the function \(x \mapsto \ln x\) is strictly concave.  Then by Jensen's Inequality,
+$$ \ln \sum_i \lambda_i a_i \ge \sum_i \lambda_i \ln a_i = \ln \prod_i a_i^{\lambda_i} , $$
+with equality if and only if all the \(a_i\) are equal.
+Since \(x \mapsto \ln x\) is a strictly increasing function, it then follows that
+$$ \sum_i \lambda_i a_i \ge \prod_i a_i^{\lambda_i}, $$
+with equality if and only if all the \(a_i\) are equal, as desired.</p></div>
 	    
 </html>
